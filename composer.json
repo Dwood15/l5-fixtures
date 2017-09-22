@@ -1,14 +1,18 @@
 {
-    "name": "mayconbordin/l5-fixtures",
+    "name": "zetas/l5-fixtures",
     "type": "library",
     "description": "A fixtures package for Laravel 5",
     "keywords": ["laravel", "laravel 5", "fixtures", "json", "yaml", "csv"],
-    "homepage": "https://github.com/mayconbordin/l5-fixtures",
+    "homepage": "https://github.com/zetas/l5-fixtures",
     "license": "MIT",
     "authors": [
         {
             "name": "Maycon Viana Bordin",
             "email": "mayconbordin@gmail.com"
+        },
+        {
+            "name": "David Della Vecchia",
+            "email": "ddv@qubitlogic.net"
         }
     ],
     "require": {
@@ -17,7 +21,7 @@
         "illuminate/database": "5.x",
         "illuminate/console": "5.x",
         "league/csv": "~8.0.0",
-        "symfony/yaml": "~2.8.2",
+        "symfony/yaml": ">=2.8.2",
         "league/flysystem": "~1.0.16"
     },
     "require-dev": {
