@@ -13,7 +13,7 @@ But if you need to load data that can't be generated then this is your best choi
 In order to install Laravel 5 Fixtures, just add 
 
 ```json
-"mayconbordin/l5-fixtures": "dev-master"
+"zetas/l5-fixtures": "dev-master"
 ```
 
 to your composer.json. Then run `composer install` or `composer update`.
@@ -21,13 +21,13 @@ to your composer.json. Then run `composer install` or `composer update`.
 Then in your `config/app.php` add 
 
 ```php
-'Mayconbordin\L5Fixtures\FixturesServiceProvider'
+'Zetas\L5Fixtures\FixturesServiceProvider'
 ```
 
 in the `providers` array and
 
 ```php
-'Fixtures' => 'Mayconbordin\L5Fixtures\FixturesFacade'
+'Fixtures' => 'Zetas\L5Fixtures\FixturesFacade'
 ```
 
 to the `aliases` array.
@@ -41,7 +41,7 @@ file will be created in your `app/config` directory.
 
 By default the fixtures directory is `/fixtures`, inside it you should place the data files that will fill
 the database. The name of the file should be exactly the same as the name of the database table (e.g.: 'table_one.json'). Take a look at the two examples
-in the [`/tests_data`](https://github.com/mayconbordin/l5-fixtures/tree/master/tests/_data) directory.
+in the [`/tests_data`](https://github.com/zetas/l5-fixtures/tree/master/tests/_data) directory.
 
 To apply all fixtures to the database run
 

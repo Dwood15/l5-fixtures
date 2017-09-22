@@ -1,16 +1,16 @@
-<?php namespace Mayconbordin\L5Fixtures;
+<?php namespace Zetas\L5Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-use Mayconbordin\L5Fixtures\Exceptions\DirectoryNotFoundException;
-use Mayconbordin\L5Fixtures\Exceptions\InvalidDataSchemaException;
-use Mayconbordin\L5Fixtures\Exceptions\NotDirectoryException;
-use Mayconbordin\L5Fixtures\Loaders\LoaderFactory;
+use Zetas\L5Fixtures\Exceptions\DirectoryNotFoundException;
+use Zetas\L5Fixtures\Exceptions\InvalidDataSchemaException;
+use Zetas\L5Fixtures\Exceptions\NotDirectoryException;
+use Zetas\L5Fixtures\Loaders\LoaderFactory;
 
 /**
  * Class Fixtures
- * @package Mayconbordin\L5Fixtures
+ * @package Zetas\L5Fixtures
  */
 class Fixtures
 {

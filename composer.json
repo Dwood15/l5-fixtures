@@ -7,12 +7,12 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Maycon Viana Bordin",
-            "email": "mayconbordin@gmail.com"
-        },
-        {
             "name": "David Della Vecchia",
             "email": "ddv@qubitlogic.net"
+        },
+        {
+            "name": "Maycon Viana Bordin",
+            "email": "mayconbordin@gmail.com"
         }
     ],
     "require": {
@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mayconbordin\\L5Fixtures\\": "src/Mayconbordin/L5Fixtures/"
+            "Zetas\\L5Fixtures\\": "src/Zetas/L5Fixtures/"
         }
     },
     "minimum-stability": "dev"

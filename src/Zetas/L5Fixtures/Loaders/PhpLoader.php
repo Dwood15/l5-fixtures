@@ -1,4 +1,4 @@
-<?php namespace Mayconbordin\L5Fixtures\Loaders;
+<?php namespace Zetas\L5Fixtures\Loaders;
 
 
 class PhpLoader extends AbstractLoader

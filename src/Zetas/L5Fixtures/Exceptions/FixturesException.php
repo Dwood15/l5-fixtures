@@ -1,4 +1,4 @@
-<?php namespace Mayconbordin\L5Fixtures\Exceptions;
+<?php namespace Zetas\L5Fixtures\Exceptions;
 
 use Exception;
 
