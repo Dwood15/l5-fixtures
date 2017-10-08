@@ -15,7 +15,7 @@ class DownCommand extends Command
      *
      * @var string
      */
-    protected $name = 'fixtures:down';
+    protected $signature = 'fixtures:down';
 
     /**
      * The console command description.
@@ -29,7 +29,7 @@ class DownCommand extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $database = $this->option('database');
 

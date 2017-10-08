@@ -15,7 +15,7 @@ class UpCommand extends Command
      *
      * @var string
      */
-    protected $name = 'fixtures:up';
+    protected $signature = 'fixtures:up';
 
     /**
      * The console command description.
@@ -29,7 +29,7 @@ class UpCommand extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $database = $this->option('database');
         $dir      = $this->option('dir');
