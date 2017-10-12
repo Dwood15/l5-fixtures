@@ -1,7 +1,7 @@
-<?php namespace Zetas\L5Fixtures\Loaders;
+<?php namespace Dwood\L5Fixtures\Loaders;
 
-use Zetas\L5Fixtures\Exceptions\UnsupportedFormatException;
-use Zetas\L5Fixtures\FixturesMetadata;
+use Dwood\DwoodL5Fixtures\Exceptions\UnsupportedFormatException;
+use Dwood\L5Fixtures\FixturesMetadata;
 
 class LoaderFactory
 {

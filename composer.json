@@ -13,6 +13,10 @@
         {
             "name": "Maycon Viana Bordin",
             "email": "mayconbordin@gmail.com"
+        },
+        {
+            "name": "Dason Woodhouse",
+            "email": "dwood15@gmail.com"
         }
     ],
     "require": {
@@ -29,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dwoodVert\\L5Fixtures\\": "src/dwoodVert/L5Fixtures/"
+            "Dwood\\L5Fixtures\\": "src/Dwood/L5Fixtures/"
         }
     },
     "minimum-stability": "dev"

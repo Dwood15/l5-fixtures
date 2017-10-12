@@ -1,8 +1,8 @@
-<?php namespace Zetas\L5Fixtures;
+<?php namespace Dwood\L5Fixtures;
 
 use Illuminate\Support\ServiceProvider;
-use Zetas\L5Fixtures\Commands\DownCommand;
-use Zetas\L5Fixtures\Commands\UpCommand;
+use Dwood\L5Fixtures\Commands\DownCommand;
+use Dwood\L5Fixtures\Commands\UpCommand;
 
 class FixturesServiceProvider extends ServiceProvider
 {
@@ -49,7 +49,7 @@ class FixturesServiceProvider extends ServiceProvider
             return new Fixtures($app['config']->get('fixtures'));
         });
 
-        $this->app->alias('fixtures', 'Zetas\L5Fixtures\Fixtures');
+        $this->app->alias('fixtures', 'Dwood\L5Fixtures\Fixtures');
     }
 
     /**

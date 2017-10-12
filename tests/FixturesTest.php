@@ -31,7 +31,7 @@ class FixturesTest extends PHPUnit_Framework_TestCase
         DB::shouldReceive('table')->with('countries')->once()->andReturn($queryBuilder);
         DB::shouldReceive('table')->with('logs')->once()->andReturn($queryBuilder);
 
-        $fixtures = new \Zetas\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
+        $fixtures = new \Dwood\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
 
         $fixtures->up();
 
@@ -48,7 +48,7 @@ class FixturesTest extends PHPUnit_Framework_TestCase
         DB::shouldReceive('statement')->with('SET FOREIGN_KEY_CHECKS=1;')->once();
         DB::shouldReceive('table')->with('users')->once()->andReturn($queryBuilder);
 
-        $fixtures = new \Zetas\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
+        $fixtures = new \Dwood\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
 
         $fixtures->up(['users']);
 
@@ -69,7 +69,7 @@ class FixturesTest extends PHPUnit_Framework_TestCase
         DB::shouldReceive('table')->with('countries')->once()->andReturn($queryBuilder);
         DB::shouldReceive('table')->with('logs')->once()->andReturn($queryBuilder);
 
-        $fixtures = new \Zetas\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
+        $fixtures = new \Dwood\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
 
         $fixtures->down();
 
@@ -78,7 +78,7 @@ class FixturesTest extends PHPUnit_Framework_TestCase
 
     public function testGetFixtures()
     {
-        $fixtures = new \Zetas\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
+        $fixtures = new \Dwood\L5Fixtures\Fixtures(['location' => __DIR__ . '/_data']);
         $this->assertEquals(4, sizeof($fixtures->getFixtures()));
     }
 }

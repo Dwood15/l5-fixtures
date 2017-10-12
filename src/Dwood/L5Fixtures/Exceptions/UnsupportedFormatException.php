@@ -1,4 +1,4 @@
-<?php namespace Zetas\L5Fixtures\Exceptions;
+<?php namespace Dwood\L5Fixtures\Exceptions;
 
 
 class UnsupportedFormatException extends FixturesException

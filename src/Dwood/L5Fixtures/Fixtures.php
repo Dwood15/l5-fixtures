@@ -1,16 +1,16 @@
-<?php namespace Zetas\L5Fixtures;
+<?php namespace Dwood\L5Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-use Zetas\L5Fixtures\Exceptions\DirectoryNotFoundException;
-use Zetas\L5Fixtures\Exceptions\InvalidDataSchemaException;
-use Zetas\L5Fixtures\Exceptions\NotDirectoryException;
-use Zetas\L5Fixtures\Loaders\LoaderFactory;
+use Dwood\L5Fixtures\Exceptions\DirectoryNotFoundException;
+use Dwood\L5Fixtures\Exceptions\InvalidDataSchemaException;
+use Dwood\L5Fixtures\Exceptions\NotDirectoryException;
+use Dwood\L5Fixtures\Loaders\LoaderFactory;
 
 /**
  * Class Fixtures
- * @package Zetas\L5Fixtures
+ * @package Dwood\L5Fixtures
  */
 class Fixtures
 {

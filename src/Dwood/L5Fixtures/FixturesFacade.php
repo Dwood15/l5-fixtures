@@ -1,4 +1,4 @@
-<?php namespace Zetas\L5Fixtures;
+<?php namespace Dwood\L5Fixtures;
 
 use Illuminate\Support\Facades\Facade;
 

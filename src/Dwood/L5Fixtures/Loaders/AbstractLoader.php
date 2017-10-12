@@ -1,6 +1,6 @@
-<?php namespace Zetas\L5Fixtures\Loaders;
+<?php namespace Dwood\L5Fixtures\Loaders;
 
-use Zetas\L5Fixtures\FixturesMetadata;
+use Dwood\L5Fixtures\FixturesMetadata;
 
 abstract class AbstractLoader implements Loader
 {

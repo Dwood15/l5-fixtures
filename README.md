@@ -1,19 +1,19 @@
 # l5-fixtures
 
-[![Build Status](https://travis-ci.org/mayconbordin/l5-fixtures.svg?branch=master)](https://travis-ci.org/mayconbordin/l5-fixtures) [![Latest Stable Version](https://poser.pugx.org/mayconbordin/l5-fixtures/v/stable)](https://packagist.org/packages/mayconbordin/l5-fixtures) [![Total Downloads](https://poser.pugx.org/mayconbordin/l5-fixtures/downloads)](https://packagist.org/packages/mayconbordin/l5-fixtures) [![Latest Unstable Version](https://poser.pugx.org/mayconbordin/l5-fixtures/v/unstable)](https://packagist.org/packages/mayconbordin/l5-fixtures) [![License](https://poser.pugx.org/mayconbordin/l5-fixtures/license)](https://packagist.org/packages/mayconbordin/l5-fixtures)
+This version of l5-fixtures removes the YAML compatibility module- it is listed as incompatible with symfony router 3.3.*
 
-Fixtures package for Laravel 5 with support for JSON, CSV, YAML and PHP files.
+Fixtures package for Laravel 5 with support for JSON, CSV, and PHP files.
 
-If you are seeding your database with fake data that can be easily generated, consider using the [Model Factories](http://laravel.com/docs/5.1/seeding#using-model-factories).
+If you are seeding your database with fake data that can be easily generated, consider using the [Model Factories](http://laravel.com/docs/5.5/seeding#using-model-factories).
 
-But if you need to load data that can't be generated then this is your best choice.
+If you need to load data that can't be generated then this is your best choice.
 
 ## Installation
 
 In order to install Laravel 5 Fixtures, just add 
 
 ```json
-"zetas/l5-fixtures": "dev-master"
+Dwood: "dev-master"
 ```
 
 to your composer.json. Then run `composer install` or `composer update`.
@@ -21,13 +21,13 @@ to your composer.json. Then run `composer install` or `composer update`.
 Then in your `config/app.php` add 
 
 ```php
-'Zetas\L5Fixtures\FixturesServiceProvider'
+'dwood\L5Fixtures\FixturesServiceProvider'
 ```
 
 in the `providers` array and
 
 ```php
-'Fixtures' => 'Zetas\L5Fixtures\FixturesFacade'
+'Fixtures' => 'dwood\L5Fixtures\FixturesFacade'
 ```
 
 to the `aliases` array.
@@ -41,7 +41,7 @@ file will be created in your `app/config` directory.
 
 By default the fixtures directory is `/fixtures`, inside it you should place the data files that will fill
 the database. The name of the file should be exactly the same as the name of the database table (e.g.: 'table_one.json'). Take a look at the two examples
-in the [`/tests_data`](https://github.com/zetas/l5-fixtures/tree/master/tests/_data) directory.
+in the [`/tests_data`](https://github.com/dwood/l5-fixtures/tree/master/tests/_data) directory.
 
 To apply all fixtures to the database run
 
@@ -95,14 +95,6 @@ The delimiter is detected automatically.
 ```csv
 name;region;country
 Owen Sound;ON;Sierra Leone
-```
-
-#### YAML
-
-```yaml
-- name: Owen Sound
-  region: ON
-  country: Sierra Leone
 ```
 
 #### PHP

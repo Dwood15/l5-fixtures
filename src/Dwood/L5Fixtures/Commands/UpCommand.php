@@ -1,7 +1,7 @@
-<?php namespace Zetas\L5Fixtures\Commands;
+<?php namespace Dwood\L5Fixtures\Commands;
 
 use Illuminate\Console\Command;
-use Zetas\L5Fixtures\Exceptions\FixturesException;
+use Dwood\L5Fixtures\Exceptions\FixturesException;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
