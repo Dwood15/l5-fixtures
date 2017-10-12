@@ -1,5 +1,5 @@
 {
-    "name": "dwoodvert/l5-fixtures",
+    "name": "dwood/l5-fixtures",
     "type": "library",
     "description": "A fixtures package for Laravel 5",
     "keywords": ["laravel", "laravel 5", "fixtures", "json", "csv"],
